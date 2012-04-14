@@ -1,1 +1,1 @@
-Some Greasemonkey scripts (hosted on [userscripts.org](http://userscripts.org/users/98683/scripts)).
+Some Greasemonkey scripts (hosted on [userscripts.org](http://j.mp/kl7-userscripts)).
