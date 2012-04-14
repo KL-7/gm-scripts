@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name           Last.fm Images
-// @version        2.0
+// @version        2.1
 // @date           15/04/2012
 // @author         Kirill Lashuk aka KL-7
 // @namespace      http://about.me/kl7
@@ -16,7 +16,7 @@
 // ==/UserScript==
 
 (function () {
-	var GM_Debug = 0;
+	var GM_Debug = 1;
 
 	if(GM_Debug) {
 		var log = (unsafeWindow.console) ? unsafeWindow.console.log : GM_log;
@@ -35,11 +35,11 @@
     var label = function(key) { return labels[key][ru]; }
 
 	var album_page = document.getElementsByClassName('current')[0].firstChild.href.match(/albums$/);
-	var view = document.getElementsByClassName('the-image');
+	var image = document.getElementsByClassName('the-image');
+    var view = image && image[0];
 
 	// Image view page
 	if (view) {
-        view = view[0];
 		// Add full-size image link
 		var art_src = view.getElementsByTagName('img')[0].src;
 		var link = document.createElement('a');
