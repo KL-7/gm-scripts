@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name           Last.fm Ctrl+Enter Shouts
-// @version        1.1
+// @version        1.2
 // @date           05/04/2012
 // @author         Kirill Lashuk aka KL-7
 // @namespace      http://about.me/kl7
@@ -9,8 +9,7 @@
 // @include        http://www.lastfm.*/*
 // ==/UserScript==
 //
-
-(function () {
+(function() {
     var shoutmsg = document.getElementById('shoutmsg');
     if (shoutmsg) {
         shoutmsg.setAttribute(
