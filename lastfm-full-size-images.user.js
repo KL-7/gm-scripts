@@ -1,10 +1,10 @@
 // ==UserScript==
-// @name           Last.fm Images
-// @version        2.2
+// @name           Last.fm Full-size Images
+// @version        2.3
 // @date           15/04/2012
 // @author         Kirill Lashuk aka KL-7
 // @namespace      http://about.me/kl7
-// @description    Adds full-size link to the image page in the gallery. Adds link to the album's covers page.
+// @description    Adds a link to the full-size version of the image in the gallery. Adds a link to the album's covers page.
 // @include        http://www.last.fm/music/*/*
 // @include        http://www.last.fm/music/*/+images/*
 // @exclude        http://www.last.fm/music/+*
@@ -14,6 +14,7 @@
 // @exclude        http://www.lastfm.*/music/+*
 // @exclude        http://www.lastfm.*/music/*/_/*
 // ==/UserScript==
+
 (function() {
     var GM_Debug = 1;
 
