@@ -1,19 +1,21 @@
 // ==UserScript==
-// @name           Last.fm Ctrl+Enter Shout
-// @version        1.0
-// @date           04/06/2010
+// @name           Last.fm Ctrl+Enter Shouts
+// @version        1.1
+// @date           05/04/2012
 // @author         Kirill Lashuk aka KL-7
-// @namespace      coverfm.appspot.com
-// @description    Allow submiting shouts by pressing Ctrl+Enter.
+// @namespace      http://about.me/kl7
+// @description    Allows submiting shouts by pressing Ctrl+Enter or Met+Enter (Meta is Cmd on Mac OS X).
 // @include        http://www.last.fm/*
 // @include        http://www.lastfm.*/*
 // ==/UserScript==
+//
 
 (function () {
-	var shoutmsg = document.getElementById('shoutmsg');
-	if (shoutmsg) {
-		shoutmsg.setAttribute('onkeypress',
-			'if (this.value != "" && event.ctrlKey && event.keyCode==13) \
-			{this.parentNode.submit.click();}');
-	}
+    var shoutmsg = document.getElementById('shoutmsg');
+    if (shoutmsg) {
+        shoutmsg.setAttribute(
+            "onkeypress",
+            "if (this.value != '' && (event.ctrlKey || event.metaKey) && event.keyCode == 13) { this.parentNode.submit.click(); }"
+        );
+    }
 })();
