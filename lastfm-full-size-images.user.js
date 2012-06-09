@@ -16,7 +16,7 @@
 // ==/UserScript==
 
 (function() {
-    var GM_Debug = 1;
+    var GM_Debug = 0;
 
     if (GM_Debug) {
         var log = (unsafeWindow.console) ? unsafeWindow.console.log: GM_log;
@@ -56,13 +56,13 @@
         span.style.top = 0;
         span.style.right = 0;
 
-        document.getElementsByClassName('imageInfo')[0].style.position = 'relative'
-
-        var uploadInfo = document.getElementsByClassName('uploadInfo')[0];
-        uploadInfo.parentNode.appendChild(span);
+        var imageDetails = document.getElementsByClassName('widget-imagedetails')[0];
+        imageDetails.style.position = 'relative';
+        imageDetails.appendChild(span);
 
         log('fullsize link added');
-        // Album main page
+
+    // Album main page
     } else if (album_page && document.getElementById('catalogueHead')) {
         var covers_link = document.createElement('a');
         covers_link.href = window.location.href + '/+images';
