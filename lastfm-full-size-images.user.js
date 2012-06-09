@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name           Last.fm Full-size Images
-// @version        2.3
-// @date           15/04/2012
+// @version        2.4
+// @date           09/06/2012
 // @author         Kirill Lashuk aka KL-7
 // @namespace      http://about.me/kl7
 // @description    Adds a link to the full-size version of the image in the gallery. Adds a link to the album's covers page.
