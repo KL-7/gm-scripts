@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name           Last.fm Ctrl+Enter Shouts
-// @version        1.3
+// @version        1.3.1
 // @date           05/04/2012
 // @author         Kirill Lashuk aka KL-7
 // @namespace      http://about.me/kl7
-// @description    Allows submitting shouts by pressing Ctrl+Enter or Met+Enter (Meta is Cmd on Mac OS X).
+// @description    Allows submitting shouts by pressing Ctrl+Enter or Meta+Enter (in OS X Meta is Cmd).
 // @include        http://www.last.fm/*
 // @include        http://www.lastfm.*/*
 // ==/UserScript==
